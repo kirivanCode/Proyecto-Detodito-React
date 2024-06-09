@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+     /* Ajusta el relleno según sea necesario */
+  }
+  
+.padre {
+  text-align: center; /* Centra el contenido del formulario */
+}
+
+.tamaño-imagen{
+    width: 20%;
+    height: 800%;
+    margin-top: 10px;
+}
+
+.estilo-profile{
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cajatexto {
+    background-color: #cccccc40;
+    border-color: slategray;
+    border-radius: 30px;
+    width: 300px;
+    padding: 15px;
+    border-width: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .cajatexto input[type="text"],
+  .cajatexto input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid slategray;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center; /* Centro el texto dentro del campo de texto */
+  }
+  
+
+.cajatexto:focus{
+    outline: 1px solid cornflowerblue;
+    box-shadow: 0 0 10 px cornflowerblue;
+}
+
+.btnform{
+    background-color: #0D6EFD;
+    border-color: slategray;
+    border-radius: 30px;
+    width: 100px;
+    padding: 15px;
+    border-width: 0px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.texto{
+    font-size: 20px;
+    color: slategray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+.btnswitch{
+    background-color: darkblue;
+    border-radius: 30px;
+    padding: 8px;
+    border-width: 0px;
+    color: white;
+    font-size: 16px;
+}
+
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+}
+.cajatexto {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+.btnform {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btnform:hover {
+  background-color: #0056b3;
+}
+.texto {
+  margin-top: 15px;
+}
+
+.btnswitch {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.btnswitch:hover {
+  color: #0056b3;
+}

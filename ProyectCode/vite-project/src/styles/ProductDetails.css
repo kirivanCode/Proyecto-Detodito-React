@@ -1,0 +1,60 @@
+/* ProductDetails.css */
+
+.product-details-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de flexión a columna para apilar elementos verticalmente */
+  max-width: 90%; /* Usamos un porcentaje para que se adapte mejor en pantallas más pequeñas */
+  max-height: 80vh; /* Establecemos una altura máxima del 80% de la altura visible del dispositivo */
+}
+
+.product-details-container img {
+  max-width: 300px; /* Ajustamos la imagen para que ocupe todo el ancho del contenedor */
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.product-details-info {
+  padding: 0 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.product-description,
+.product-ingredients {
+  padding: 12px;
+}
+
+.product-price {
+  padding: 5px;
+}

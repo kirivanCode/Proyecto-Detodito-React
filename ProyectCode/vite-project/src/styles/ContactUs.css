@@ -1,0 +1,39 @@
+/* En tu archivo ContactUs.css */
+
+.contact-us-container {
+  max-width: 700px;  
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contactUs-section {
+  border-bottom: 0;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

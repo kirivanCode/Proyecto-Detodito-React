@@ -1,0 +1,341 @@
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+}
+
+section {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.welcome-section h2 {
+  font-size: 50px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  border-bottom: none;
+  padding: 0;
+  padding-left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+  opacity: 0.75;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+}
+
+/* Estilos para títulos */
+h2 {
+  color: #007bff;
+}
+
+/* Estilos para párrafos */
+p {
+  line-height: 1.6;
+}
+
+.featured-products-section .product-card {
+  box-shadow: none;
+}
+
+
+/* Estilos para tarjetas de productos/testimonios */
+.product-card {
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s, transform 0.3s ease-in-out;
+  height: 350px;
+  border-radius: 0 !important;
+  box-shadow: none;
+}
+
+.ver-mas-button {
+  padding: 20px;
+  margin-top: 20px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.ver-mas-button:hover {
+  background-color: #0056b3;
+}
+
+.featured-products-section .product-card,
+.offers-slick-slide .product-card{
+  background-color: #ffffff;
+}
+
+.testimonial{
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden; 
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.customer-testimonials-section h2{
+  border-bottom: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+
+/* Estilos para imágenes en las tarjetas de productos */
+.product-card img {
+  height: 200px;
+  border-radius: 0 !important;
+}
+
+/* Estilos para información del producto en las tarjetas */
+.product-card h3 {
+  padding: 0 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700
+}
+
+.product-card p {
+  padding: 0 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700
+}
+
+/* Estilos para enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+/* Estilos para la sección de ofertas especiales */
+.special-offers-section {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px; /* Ajusta el tamaño del texto según tu preferencia */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+/* Estilos específicos del slider de ofertas */
+.offers-slider {
+  width: 80%; 
+  margin: 0 auto;
+}
+
+/* Estilos específicos de las diapositivas del slider de ofertas */
+.offers-slider .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.offers-slick-slide{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-slick-slide .product-card{
+  height: 300px;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.offers-slick-slide .product-card:hover{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+
+.offers-slick-slide .product-card p{
+  padding: 0 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700
+}
+
+.offers-slick-slide .product-card img{
+  height: 200px;
+  border-radius: 0;
+} 
+
+/* Estilos específicos de las imágenes del slider de ofertas */
+.offers-slider img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offers-slider .slick-dots {
+  padding: 15px 0px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff !important;
+}
+
+/* Estilos para el slider */
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-offers-section .slick-arrow.slick-next {
+  right: 100px;
+  z-index: 1000;
+}
+.special-offers-section .slick-arrow.slick-prev {
+  left: 100px;
+  z-index: 1000;
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover; /* La imagen se ajustará manteniendo su relación de aspecto y cubriendo todo el contenedor */
+}
+
+.slick-slide img {
+  max-width: 100%; /* Ajusta el tamaño máximo al 100% del contenedor */
+  height: 500px; /* Mantiene la proporción original de la imagen */
+}
+
+.slick-track { 
+  max-width: auto;
+  height: auto;
+}
+
+.icons{
+  width: 25px; /* Ajusta el ancho del icono según tu preferencia */
+  height: 25px;
+}
+
+/* Estilos para la sección de productos destacados */
+.featured-products-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Distribuye los elementos uniformemente */
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado de productos destacados */
+.featured-product-header {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 20px; /* Espacio entre el encabezado y las tarjetas de productos */
+  width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
+}
+
+.offer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.offer-h2 {
+  border-bottom: none;
+  margin-right: 5px;
+}
+
+.welcome-text {
+  margin-top: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.featured-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.featured-h2 {
+  border-bottom: none;
+  margin-right: 5px;
+}
+
+/* Opcional: Ajusta la posición de las flechas según sea necesario */
+.slick-arrow.slick-prev {
+  left: 50px;
+  z-index: 999;
+}
+
+.slick-arrow.slick-next {
+  right: 50px;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .slider-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .welcome-section h2 {
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #007bff;
+    text-shadow: 0 0px 0px rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+
+  .slick-slide img {
+    max-width: 100%; /* Ajusta el tamaño máximo al 100% del contenedor */
+    height: 200px; /* Mantiene la proporción original de la imagen */
+  }
+
+  .testimonials-and-products {
+    flex-direction: column; /* Cambia a un diseño de columna en pantallas más pequeñas */
+  }
+
+  .customer-testimonials-section,
+  .featured-products-section {
+    margin-right: 0; /* Elimina el espacio entre las secciones en pantallas más pequeñas */
+    margin-bottom: 20px; /* Añade espacio entre las secciones cuando están en una columna */
+  }
+}

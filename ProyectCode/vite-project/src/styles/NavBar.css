@@ -1,0 +1,157 @@
+/* NavBar.css */
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  order: 2; 
+}
+
+.logo {
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-right: 0;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.active-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.active-link:hover {
+  color: #007bff;
+}
+
+.cart-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.cart-link:hover {
+  color: #0056b3;
+}
+
+.icons {
+  width: 30px;
+  height: auto;
+  padding: 0 10px;
+}
+
+.icon-cerrar-sesion{
+  width: 25px;
+  height: auto;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.active-link {
+  font-size: 20px;
+  color: rgb(59, 59, 59);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active-link a:active {
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 6px 0;
+  border-radius: 8px;
+  opacity: 0.75;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .navbar {
+    width: 98%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .menu-button {
+    display: block; /* Asegura que el botón sea visible desde el principio */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background-color: #f8f9fa !important;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    width: 50%;
+    opacity: 0.90;
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+    text-align: center; /* Centra el texto en el modo responsivo */
+  }
+
+  .logo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+  }
+
+  .active-link,
+  .cart-link {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+}
